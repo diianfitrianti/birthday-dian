@@ -2,125 +2,104 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffdae7">
-<title>Happy Birthday, Dian Fitrianti! 💗</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8dce2">
+<title>For Dian Fitrianti ♡</title>
 <style>
-  :root { --pink:#ff7fa8; --deep:#a83261; --cream:#fff8fb; --ink:#633447; }
-  * { box-sizing:border-box }
-  body {
-    margin:0; min-height:100vh; overflow-x:hidden; color:var(--ink);
-    font-family: Georgia, "Times New Roman", serif;
-    background: radial-gradient(circle at 15% 15%, #fff 0 2px, transparent 3px),
-                radial-gradient(circle at 80% 25%, #fff9 0 2px, transparent 3px),
-                linear-gradient(145deg,#ffeaf1,#ffd1e1 48%,#fff0f5);
-    background-size:120px 120px,160px 160px,auto;
-  }
-  .wrap { min-height:100vh; display:grid; place-items:center; padding:34px 16px; position:relative; }
-  .card {
-    width:min(680px,100%); padding:clamp(26px,6vw,58px) clamp(20px,6vw,58px);
-    text-align:center; background:#fff9fcdf; border:1px solid #fff;
-    border-radius:30px; box-shadow:0 22px 70px #a8326120; backdrop-filter:blur(8px);
-    position:relative; z-index:2;
-  }
-  .eyebrow { letter-spacing:.22em; text-transform:uppercase; font: bold 11px Arial,sans-serif; color:#c45b82; }
-  h1 { color:var(--deep); font-size:clamp(42px,9vw,70px); line-height:.98; margin:18px 0 10px; font-weight:normal; }
-  h1 span { display:block; font-style:italic; color:#e56f9b; font-size:.72em; margin-top:8px; }
-  .name { font:600 clamp(21px,5vw,28px) Arial,sans-serif; color:#9d3d65; margin:20px 0 12px; }
-  .intro { font-size:17px; line-height:1.8; max-width:490px; margin:0 auto; }
-  .cake { font-size:58px; margin:16px 0 4px; filter:drop-shadow(0 8px 8px #d66b8b33); }
-  button {
-    border:0; border-radius:999px; padding:15px 25px; margin-top:25px;
-    background:linear-gradient(110deg,#f27da4,#c94d7b); color:white;
-    font: bold 14px Arial,sans-serif; letter-spacing:.02em; cursor:pointer;
-    box-shadow:0 9px 22px #c94d7b40; transition:transform .2s,box-shadow .2s;
-  }
-  button:hover { transform:translateY(-3px); box-shadow:0 13px 25px #c94d7b50; }
-  .hint { font:12px Arial,sans-serif; color:#b77b91; margin-top:13px; }
-  .letter {
-    display:none; margin:28px auto 0; padding:24px 22px; max-width:510px;
-    text-align:left; background:#fff; border-radius:18px; border:1px solid #ffe0ea;
-    box-shadow:0 10px 30px #a8326110; animation:rise .55s ease both;
-  }
-  .letter.show { display:block; }
-  .letter h2 { text-align:center; color:var(--deep); font-weight:normal; font-size:28px; margin:0 0 16px; }
-  .letter p { font-size:16px; line-height:1.85; margin:0 0 13px; }
-  .sign { text-align:right; color:#c34e7a; font-style:italic; margin-top:20px!important; }
-  .footer { margin-top:26px; color:#c17b96; font:12px Arial,sans-serif; }
-  .heart { position:fixed; bottom:-35px; z-index:1; pointer-events:none; opacity:.6; animation:floatUp linear forwards; }
-  .sparkle { position:absolute; color:#e88bad; animation:twinkle 2.2s infinite ease-in-out; }
-  @keyframes floatUp { to { transform:translateY(-115vh) rotate(25deg); opacity:0; } }
-  @keyframes rise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
-  @keyframes twinkle { 50% { transform:scale(1.35) rotate(20deg); opacity:.45; } }
-  @media(max-width:480px) { .card{border-radius:24px} .intro{font-size:16px} .letter{padding:21px 18px} }
+:root{--pink:#f7dce2;--pink2:#f2c7d1;--red:#a92d50;--wine:#7c2941;--cream:#fffaf7;--ink:#754554}
+*{box-sizing:border-box} body{margin:0;background:#f8e2e6;color:var(--wine);font-family:Georgia,serif}
+button{font:inherit;cursor:pointer}
+.screen{min-height:100svh;display:none;align-items:center;justify-content:center;padding:24px 15px;background-color:var(--pink);background-image:linear-gradient(90deg,#ffffff38 50%,transparent 50%),linear-gradient(#ffffff38 50%,transparent 50%);background-size:28px 28px;background-position:0 0}
+.screen.active{display:flex}.panel{width:min(560px,100%);text-align:center;padding:28px 22px 24px;background:#fffaf0e8;border:2px solid white;border-radius:18px;box-shadow:0 12px 35px #8b34451c;position:relative}
+.tiny{font:italic 15px Georgia;color:#a65a70;letter-spacing:.04em}.heart{color:#b92f55}
+h1{font-size:clamp(36px,9vw,58px);line-height:1.02;margin:12px 0;color:var(--red);font-weight:900;letter-spacing:.02em;text-shadow:2px 2px #f6c5d0}
+h2{font-size:28px;font-style:italic;font-weight:normal;margin:6px 0 18px;color:#a43d5a}
+p{line-height:1.75;font-size:16px}.name{font:700 22px Arial,sans-serif;color:#8c344d;margin:12px}
+.btn{border:0;border-radius:30px;background:var(--red);color:white;padding:12px 22px;box-shadow:0 4px 0 #79243e;font:600 14px Arial,sans-serif;margin:8px 4px}.btn.secondary{background:#fff;color:var(--red);border:1px solid #e9aebb;box-shadow:0 4px 0 #e7c1c9}
+.dots{color:#bd627d;letter-spacing:7px;font-size:17px;margin:18px 0}
+.pin-heart{font-size:48px;margin:0 0 5px}.pin-display{height:35px;letter-spacing:12px;font:24px Arial;color:var(--red);margin:10px}
+.keypad{display:grid;grid-template-columns:repeat(3,58px);gap:9px;justify-content:center;margin:12px auto}.key{height:48px;border:1px solid #e9bdc8;background:#fff;border-radius:50%;color:var(--wine);font:18px Arial}.key:active{background:#f7cbd6}
+.note{font:12px Arial;color:#a66c7e}.nav{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px}.nav .btn{min-width:86px}.progress{font:12px Arial;color:#b36c82}
+.calendar{background:#fff;border-radius:15px;padding:13px;max-width:390px;margin:15px auto;box-shadow:0 5px 18px #8b34451a}.month{background:var(--red);color:white;border-radius:9px;padding:10px;font:bold 18px Arial}.days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:10px;font:13px Arial}.days span{padding:9px 0;border-radius:50%}.days .weekday{font-weight:bold;color:#b66b80}.days .birthday{background:#c43b60;color:white;font-weight:bold;box-shadow:0 2px 0 #8e2444}.date-caption{font-style:italic;color:#a34d67}
+.letter{background:#fff;border-radius:8px;padding:23px 20px;text-align:left;box-shadow:0 5px 20px #8b34451c;max-width:450px;margin:15px auto;transform:rotate(-.5deg)}.letter p{font-size:15px}.sign{text-align:right;font-style:italic;color:#ad3e60}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:17px auto;max-width:430px}.photo{background:white;padding:8px 8px 22px;box-shadow:0 4px 12px #8b34451c;transform:rotate(-2deg);cursor:pointer}.photo:nth-child(even){transform:rotate(2deg)}.photo img{width:100%;aspect-ratio:1;object-fit:cover;background:#f6e8eb;display:block}.photo small{display:block;margin-top:7px;font:italic 12px Georgia;color:#9d536b}.placeholder{aspect-ratio:1;display:grid;place-items:center;background:#f8e8eb;color:#b06b80;font:13px Arial;padding:10px}
+.cake{font-size:92px;line-height:1.4}.candle{font-size:34px}.final{font-style:italic;font-size:20px;color:#a33556}
+.modal{position:fixed;inset:0;background:#29151dcc;display:none;align-items:center;justify-content:center;padding:20px;z-index:10}.modal.open{display:flex}.modal img{max-width:min(92vw,520px);max-height:80vh;border:10px solid white;border-radius:5px}.close{position:absolute;right:18px;top:15px;background:white;color:#8b2948;border:0;border-radius:50%;width:38px;height:38px;font-size:22px}
+.float{position:fixed;bottom:-30px;left:var(--x);font-size:20px;color:#c45c7b;opacity:.7;pointer-events:none;animation:up 8s linear forwards}@keyframes up{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:390px){.panel{padding:23px 14px}.keypad{grid-template-columns:repeat(3,54px)}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="card">
-    <div class="sparkle" style="top:12%;left:10%;font-size:24px">✦</div>
-    <div class="sparkle" style="top:18%;right:11%;font-size:18px;animation-delay:.7s">✧</div>
-    <div class="eyebrow">A little celebration for someone special</div>
-    <h1>Happy Birthday <span>to you</span></h1>
-    <div class="name">Dian Fitrianti 💗</div>
-    <div class="cake">🎂</div>
-    <p class="intro">
-      Hari ini adalah hari yang spesial, karena seseorang yang begitu berarti
-      sedang bertambah usia. Semoga hari-harimu selalu dipenuhi kebahagiaan,
-      cinta, dan hal-hal indah yang kamu impikan.
-    </p>
-    <button id="openLetter" type="button">💌 Buka surat kecil dariku</button>
-    <div class="hint">Ada sedikit pesan yang ingin kusampaikan untukmu…</div>
-
-    <section class="letter" id="letter" aria-live="polite">
-      <h2>Untuk Dian, tersayang ♡</h2>
-      <p>Selamat ulang tahun, sayangku.</p>
-      <p>
-        Di hari istimewamu ini, aku cuma ingin kamu tahu betapa berharganya
-        dirimu. Terima kasih sudah hadir, membawa warna, tawa, dan banyak
-        kebahagiaan dalam hari-hariku.
-      </p>
-      <p>
-        Semoga semua doa baik yang kamu simpan satu per satu menemukan jalannya.
-        Semoga kamu selalu diberi kesehatan, hati yang tenang, langkah yang
-        dimudahkan, dan alasan untuk tersenyum setiap hari.
-      </p>
-      <p>
-        Jangan pernah merasa sendiri saat menghadapi dunia, ya. Aku berharap
-        bisa terus ada di sampingmu, mendukung setiap impianmu, menemani prosesmu,
-        dan merayakan setiap hal kecil maupun besar yang berhasil kamu capai.
-      </p>
-      <p>
-        Tetap jadi Dian yang aku kenal: manis, istimewa, dan punya cara sendiri
-        untuk membuat dunia terasa lebih indah. Hari ini dan seterusnya,
-        semoga kebahagiaan selalu menemukanmu.
-      </p>
-      <p class="sign">With all my love,<br>Someone who loves you ❤️</p>
-    </section>
-    <div class="footer">Made with love, just for you ✨</div>
-  </div>
-</div>
+<section class="screen active" id="pin">
+ <div class="panel"><div class="pin-heart">💗</div><div class="tiny">a little surprise for you</div><h2>Masukin PIN dulu</h2>
+ <div class="pin-display" id="pinDisplay">○ ○ ○ ○</div>
+ <div class="keypad" id="keypad"></div><div class="note">Petunjuk: tanggal dan bulan spesialmu ♡</div>
+ <p id="pinError" class="note" aria-live="polite"></p>
+ </div>
+</section>
+<section class="screen" id="welcome"><div class="panel">
+ <div class="tiny">♡ a little gift for you ♡</div><h1>HAPPY<br>BIRTHDAY</h1><div class="name">Dian Fitrianti</div>
+ <div class="dots">♥ · ♡ · ♥</div><p>Hari ini adalah hari spesial seseorang yang begitu berarti.<br>Semoga semua hal baik selalu menemukan jalannya kepadamu.</p>
+ <p class="tiny">tap next buat buka kadonya…</p><div class="nav"><span class="progress">01 / 06</span><button class="btn" onclick="go('calendar')">Next ›</button></div>
+ </div></section>
+<section class="screen" id="calendar"><div class="panel">
+ <div class="calendar"><div class="month">November 2026</div><div class="days" id="days"></div></div>
+ <div class="date-caption">19 November — your special day ♡</div><div class="name">Dian's Birthday</div>
+ <p>Hari ketika seseorang yang luar biasa hadir ke dunia. Semoga tahun ini membawa lebih banyak cerita indah untukmu.</p>
+ <div class="nav"><button class="btn secondary" onclick="go('welcome')">‹ Back</button><span class="progress">02 / 06</span><button class="btn" onclick="go('letter')">Next ›</button></div>
+ </div></section>
+<section class="screen" id="letter"><div class="panel">
+ <h2>a letter for you</h2><div class="letter"><div class="tiny">Dear Dian sayangku,</div>
+ <p>Selamat ulang tahun, sayangku! 💗</p>
+ <p>Makasih sudah jadi bagian paling indah dalam hari-hariku. Semoga kamu selalu diberi kesehatan, kebahagiaan, kesabaran, dan hal-hal kecil yang bikin hari-harimu lebih berwarna.</p>
+ <p>Semoga semua impian yang kamu simpan pelan-pelan jadi nyata. Aku berharap bisa selalu mendukungmu, menemani setiap prosesmu, dan ikut merayakan setiap pencapaianmu.</p>
+ <p>Terus jadi Dian yang hebat, ya. Jangan lupa bahagia dan jangan pernah meragukan betapa berharganya dirimu.</p>
+ <p class="sign">I love you, today and always.<br>Someone who loves you ♡</p></div>
+ <div class="nav"><button class="btn secondary" onclick="go('calendar')">‹ Back</button><span class="progress">03 / 06</span><button class="btn" onclick="go('memories')">Next ›</button></div>
+ </div></section>
+<section class="screen" id="memories"><div class="panel">
+ <h2>our little moments</h2><div class="tiny">foto-foto kenangan kita lebih dekat</div>
+ <div class="gallery" id="gallery">
+  <div class="photo"><img src="photos/memory-1.jpg" alt="Kenangan Dian" onclick="openPhoto(this.src)"><small>sweet little moments ♡</small></div>
+  <div class="photo"><img src="photos/memory-2.webp" alt="Kenangan bersama" onclick="openPhoto(this.src)"><small>you are my favorite</small></div>
+  <div class="photo"><img src="photos/memory-3.webp" alt="Foto berdua" onclick="openPhoto(this.src)"><small>just the two of us</small></div>
+  <div class="photo"><img src="photos/memory-4.jpg" alt="Potret Dian" onclick="openPhoto(this.src)"><small>pretty as always</small></div>
+  <div class="photo"><img src="photos/memory-5.jpg" alt="Kenangan bersama" onclick="openPhoto(this.src)"><small>my happy place</small></div>
+  <div class="photo"><img src="photos/memory-6.jpg" alt="Momen berdua" onclick="openPhoto(this.src)"><small>one of my best days</small></div>
+  <div class="photo"><img src="photos/memory-7.jpg" alt="Momen berdua" onclick="openPhoto(this.src)"><small>hold on to this moment</small></div>
+  <div class="photo"><img src="photos/memory-8.jpg" alt="Selfie bersama" onclick="openPhoto(this.src)"><small>my favorite smile</small></div>
+  <div class="photo"><img src="photos/memory-9.jpg" alt="Selfie bersama" onclick="openPhoto(this.src)"><small>always you ♡</small></div>
+  <div class="photo"><img src="photos/memory-10.jpg" alt="Kenangan berdua" onclick="openPhoto(this.src)"><small>forever in my heart</small></div>
+ </div>
+ <div class="note">Tap foto untuk melihatnya lebih besar ♡</div>
+ <div class="nav"><button class="btn secondary" onclick="go('letter')">‹ Back</button><span class="progress">04 / 06</span><button class="btn" onclick="go('wish')">Next ›</button></div>
+ </div></section>
+<section class="screen" id="wish"><div class="panel">
+ <h2>make a wish…</h2><div class="cake">🎂</div><div class="candle">🕯️ 🕯️ 🕯️</div>
+ <p>Tiup lilinnya ya, sayang!<br>Semoga satu per satu doa baikmu terkabul.</p>
+ <button class="btn" onclick="document.getElementById('wishText').textContent='Yay! Semoga semua harapan baikmu menjadi nyata. 💗'">Tiup lilin ♡</button>
+ <p id="wishText" class="final">Make a wish, Dian!</p>
+ <div class="nav"><button class="btn secondary" onclick="go('memories')">‹ Back</button><span class="progress">05 / 06</span><button class="btn" onclick="go('final')">Next ›</button></div>
+ </div></section>
+<section class="screen" id="final"><div class="panel">
+ <div class="tiny">one last thing…</div><h1>HAPPY<br>BIRTHDAY!</h1><div class="cake">💗</div>
+ <p class="final">Malam ini dan hari-hari berikutnya,<br>semoga dunia selalu baik kepadamu.</p>
+ <div class="name">With love, always ♡</div>
+ <button class="btn" onclick="go('welcome')">Replay ↻</button><div class="progress">06 / 06</div>
+ </div></section>
+<div class="modal" id="modal" onclick="this.classList.remove('open')"><button class="close">×</button><img id="modalImg" alt="Foto kenangan"></div>
 <script>
-  const btn = document.getElementById('openLetter');
-  const letter = document.getElementById('letter');
-  btn.addEventListener('click', () => {
-    letter.classList.toggle('show');
-    btn.textContent = letter.classList.contains('show') ? '💗 Tutup surat' : '💌 Buka surat kecil dariku';
-    if (letter.classList.contains('show')) letter.scrollIntoView({behavior:'smooth', block:'nearest'});
-  });
-  const symbols = ['♡','♥','✦','💗'];
-  function makeHeart() {
-    const el = document.createElement('span');
-    el.className = 'heart';
-    el.textContent = symbols[Math.floor(Math.random()*symbols.length)];
-    el.style.left = Math.random()*100 + 'vw';
-    el.style.fontSize = (14 + Math.random()*20) + 'px';
-    const duration = 7 + Math.random()*7;
-    el.style.animationDuration = duration + 's';
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), duration*1000);
-  }
-  setInterval(makeHeart, 650);
+const PIN='1911'; let entered='';
+const keypad=document.getElementById('keypad'), display=document.getElementById('pinDisplay');
+function renderPin(){display.textContent=Array.from({length:4},(_,i)=>i<entered.length?'♥':'○').join(' ')}
+[1,2,3,4,5,6,7,8,9,'⌫',0,'✓'].forEach(n=>{let b=document.createElement('button');b.className='key';b.textContent=n;b.onclick=()=>{if(n==='⌫')entered=entered.slice(0,-1);else if(n==='✓'){if(entered===PIN)go('welcome');else{document.getElementById('pinError').textContent='PIN belum tepat, coba lagi ya ♡';entered=''} }else if(entered.length<4)entered+=n;renderPin()};keypad.appendChild(b)});
+function go(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0)}
+const days=document.getElementById('days');['M','S','S','R','K','J','S'].forEach((d,i)=>{let s=document.createElement('span');s.className='weekday';s.textContent=d;days.appendChild(s)});
+/* November 2026 starts on Sunday; Monday-first calendar */
+for(let i=0;i<6;i++)days.appendChild(document.createElement('span'));
+for(let d=1;d<=30;d++){let s=document.createElement('span');s.textContent=d;if(d===19)s.className='birthday';days.appendChild(s)}
+function openPhoto(src){document.getElementById('modalImg').src=src;document.getElementById('modal').classList.add('open')}
+function floatHeart(){let e=document.createElement('div');e.className='float';e.textContent=['♡','♥','✧'][Math.floor(Math.random()*3)];e.style.setProperty('--x',Math.random()*100+'vw');document.body.appendChild(e);setTimeout(()=>e.remove(),8000)}
+setInterval(floatHeart,1100);
 </script>
-</body>
-</html>
+</body></html>
